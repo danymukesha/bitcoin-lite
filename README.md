@@ -37,10 +37,10 @@ Here is a simple example of how to use the `Transaction` class:
 ```python
 from bitcoin_lite import Transaction
 
-# Create a transaction
+# create a transaction
 tx = Transaction("Alice", "Bob", 100.0)
 
-# Print transaction details
+# print transaction details
 print(tx.details())
 ```
 
