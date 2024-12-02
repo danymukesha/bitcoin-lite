@@ -1,4 +1,15 @@
 cdef class Transaction:
+    """
+    A Cython-optimized transaction class for high-performance cryptocurrency operations.
+    
+    Attributes:
+        sender (str): The transaction initiator
+        receiver (str): The transaction recipient
+        amount (float): The transaction amount
+    
+    Methods:
+        details(): Returns a formatted transaction summary
+    """
     cdef str sender
     cdef str receiver
     cdef float amount

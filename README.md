@@ -25,6 +25,12 @@ approachable manner.
 
 ## Components
 
+Some minimum requirements:
+
+- Python ≥ 3.8
+- Cython ≥ 3.0.0
+- C compiler (gcc/clang/MSVC)
+
 ### 1. `Transaction` class
 
 The core component of the package is the `Transaction` class. This class provides:
