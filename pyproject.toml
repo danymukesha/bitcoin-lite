@@ -1,8 +1,11 @@
 [tool.poetry]
 name = "bitcoin-lite"
-version = "0.1.0"
+version = "0.1.2"
 description = "A lightweight Bitcoin transaction system using Cython"
-authors = ["danymukesha <danymukesha@gmail.com>"]
+authors = ["Dany Mukesha <danymukesha@gmail.com>"]
+homepage = "https://github.com/danymukesha/bitcoin-lite"
+readme = "README.md"
+keywords = ["bitcoin-lite", "danymukesha"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
