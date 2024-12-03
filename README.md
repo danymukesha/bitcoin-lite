@@ -10,15 +10,15 @@ approachable manner.
 ## How it works
 
 - **Transaction management**:
-  - Creates transactions with details such as sender, receiver, and amount.
-  - Generates transaction summaries quickly using optimized Cython code.
+  With this package, you shoud be able to
+  - create transactions with details such as sender, receiver, and amount.
+  - generate transaction summaries quickly using optimized Cython code.
 
 - **Performance optimization**:
   - By using Cython, the package provides enhanced computational efficiency compared to pure Python implementations.
   - `Bitcoin-lite` serves as a streamlined framework for understanding and experimenting with blockchain transaction principles 
-  through an optimized computational architecture. THe usage of Cython's static typing and direct C-level operations, 
-  `Bitcoin-Lite` achieves significant performance improvements over traditional Python implementations while maintaining 
-  accessibility for educational and research purposes.
+  through an optimized computational architecture. By using the Cython's static typing and direct C-level operations, 
+  `Bitcoin-Lite` achieves significant performance improvements over traditional Python implementations.
 
 - **Easy to use**:
   - `Bitcoin-Lite` is designed for simplicity, allowing users to easily create, process, and interact with transactions.
@@ -171,7 +171,6 @@ Preliminary benchmarks show significant performance improvements compared to pur
 
 Contributions to the Bitcoin-Lite package are welcome! If you have ideas for additional features, optimizations, or examples, feel free to submit a pull request or open an issue in the GitHub repository.
 
-## License
+## No license
 
 This package will be open-source and is not under any license (i.e. you can fork it, copy and modify it as you wish).
-

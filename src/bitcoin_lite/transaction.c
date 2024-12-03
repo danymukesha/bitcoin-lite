@@ -1497,8 +1497,8 @@ struct __pyx_obj_12bitcoin_lite_11transaction_Transaction;
 
 /* "bitcoin_lite/transaction.pyx":1
  * cdef class Transaction:             # <<<<<<<<<<<<<<
- *     cdef str sender
- *     cdef str receiver
+ *     """
+ *     A Cython-optimized transaction class for high-performance cryptocurrency operations.
  */
 struct __pyx_obj_12bitcoin_lite_11transaction_Transaction {
   PyObject_HEAD
@@ -2616,7 +2616,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_codeobj__10 __pyx_mstate_global->__pyx_codeobj__10
 /* #### Code section: module_code ### */
 
-/* "bitcoin_lite/transaction.pyx":6
+/* "bitcoin_lite/transaction.pyx":17
  *     cdef float amount
  * 
  *     def __init__(self, sender, receiver, amount):             # <<<<<<<<<<<<<<
@@ -2666,7 +2666,7 @@ static int __pyx_pw_12bitcoin_lite_11transaction_11Transaction_1__init__(PyObjec
           (void)__Pyx_Arg_NewRef_VARARGS(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 6, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 17, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -2674,9 +2674,9 @@ static int __pyx_pw_12bitcoin_lite_11transaction_11Transaction_1__init__(PyObjec
           (void)__Pyx_Arg_NewRef_VARARGS(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 6, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 17, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, 1); __PYX_ERR(0, 6, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, 1); __PYX_ERR(0, 17, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -2684,14 +2684,14 @@ static int __pyx_pw_12bitcoin_lite_11transaction_11Transaction_1__init__(PyObjec
           (void)__Pyx_Arg_NewRef_VARARGS(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 6, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 17, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, 2); __PYX_ERR(0, 6, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, 2); __PYX_ERR(0, 17, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "__init__") < 0)) __PYX_ERR(0, 6, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "__init__") < 0)) __PYX_ERR(0, 17, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 3)) {
       goto __pyx_L5_argtuple_error;
@@ -2706,7 +2706,7 @@ static int __pyx_pw_12bitcoin_lite_11transaction_11Transaction_1__init__(PyObjec
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 6, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 17, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -2743,14 +2743,14 @@ static int __pyx_pf_12bitcoin_lite_11transaction_11Transaction___init__(struct _
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 1);
 
-  /* "bitcoin_lite/transaction.pyx":7
+  /* "bitcoin_lite/transaction.pyx":18
  * 
  *     def __init__(self, sender, receiver, amount):
  *         self.sender = sender             # <<<<<<<<<<<<<<
  *         self.receiver = receiver
  *         self.amount = amount
  */
-  if (!(likely(PyString_CheckExact(__pyx_v_sender))||((__pyx_v_sender) == Py_None) || __Pyx_RaiseUnexpectedTypeError("str", __pyx_v_sender))) __PYX_ERR(0, 7, __pyx_L1_error)
+  if (!(likely(PyString_CheckExact(__pyx_v_sender))||((__pyx_v_sender) == Py_None) || __Pyx_RaiseUnexpectedTypeError("str", __pyx_v_sender))) __PYX_ERR(0, 18, __pyx_L1_error)
   __pyx_t_1 = __pyx_v_sender;
   __Pyx_INCREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
@@ -2759,14 +2759,14 @@ static int __pyx_pf_12bitcoin_lite_11transaction_11Transaction___init__(struct _
   __pyx_v_self->sender = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "bitcoin_lite/transaction.pyx":8
+  /* "bitcoin_lite/transaction.pyx":19
  *     def __init__(self, sender, receiver, amount):
  *         self.sender = sender
  *         self.receiver = receiver             # <<<<<<<<<<<<<<
  *         self.amount = amount
  * 
  */
-  if (!(likely(PyString_CheckExact(__pyx_v_receiver))||((__pyx_v_receiver) == Py_None) || __Pyx_RaiseUnexpectedTypeError("str", __pyx_v_receiver))) __PYX_ERR(0, 8, __pyx_L1_error)
+  if (!(likely(PyString_CheckExact(__pyx_v_receiver))||((__pyx_v_receiver) == Py_None) || __Pyx_RaiseUnexpectedTypeError("str", __pyx_v_receiver))) __PYX_ERR(0, 19, __pyx_L1_error)
   __pyx_t_1 = __pyx_v_receiver;
   __Pyx_INCREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
@@ -2775,17 +2775,17 @@ static int __pyx_pf_12bitcoin_lite_11transaction_11Transaction___init__(struct _
   __pyx_v_self->receiver = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "bitcoin_lite/transaction.pyx":9
+  /* "bitcoin_lite/transaction.pyx":20
  *         self.sender = sender
  *         self.receiver = receiver
  *         self.amount = amount             # <<<<<<<<<<<<<<
  * 
  *     def details(self):
  */
-  __pyx_t_2 = __pyx_PyFloat_AsFloat(__pyx_v_amount); if (unlikely((__pyx_t_2 == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_t_2 = __pyx_PyFloat_AsFloat(__pyx_v_amount); if (unlikely((__pyx_t_2 == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 20, __pyx_L1_error)
   __pyx_v_self->amount = __pyx_t_2;
 
-  /* "bitcoin_lite/transaction.pyx":6
+  /* "bitcoin_lite/transaction.pyx":17
  *     cdef float amount
  * 
  *     def __init__(self, sender, receiver, amount):             # <<<<<<<<<<<<<<
@@ -2805,7 +2805,7 @@ static int __pyx_pf_12bitcoin_lite_11transaction_11Transaction___init__(struct _
   return __pyx_r;
 }
 
-/* "bitcoin_lite/transaction.pyx":11
+/* "bitcoin_lite/transaction.pyx":22
  *         self.amount = amount
  * 
  *     def details(self):             # <<<<<<<<<<<<<<
@@ -2866,13 +2866,13 @@ static PyObject *__pyx_pf_12bitcoin_lite_11transaction_11Transaction_2details(st
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("details", 1);
 
-  /* "bitcoin_lite/transaction.pyx":12
+  /* "bitcoin_lite/transaction.pyx":23
  * 
  *     def details(self):
  *         return f"Transaction from {self.sender} to {self.receiver} of amount {self.amount}"             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyTuple_New(6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = 0;
   __pyx_t_3 = 127;
@@ -2880,7 +2880,7 @@ static PyObject *__pyx_pf_12bitcoin_lite_11transaction_11Transaction_2details(st
   __pyx_t_2 += 17;
   __Pyx_GIVEREF(__pyx_kp_u_Transaction_from);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_u_Transaction_from);
-  __pyx_t_4 = __Pyx_PyObject_FormatSimple(__pyx_v_self->sender, __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_FormatSimple(__pyx_v_self->sender, __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) : __pyx_t_3;
   __pyx_t_2 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_4);
@@ -2891,7 +2891,7 @@ static PyObject *__pyx_pf_12bitcoin_lite_11transaction_11Transaction_2details(st
   __pyx_t_2 += 4;
   __Pyx_GIVEREF(__pyx_kp_u_to);
   PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_kp_u_to);
-  __pyx_t_4 = __Pyx_PyObject_FormatSimple(__pyx_v_self->receiver, __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_FormatSimple(__pyx_v_self->receiver, __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) : __pyx_t_3;
   __pyx_t_2 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_4);
@@ -2902,9 +2902,9 @@ static PyObject *__pyx_pf_12bitcoin_lite_11transaction_11Transaction_2details(st
   __pyx_t_2 += 11;
   __Pyx_GIVEREF(__pyx_kp_u_of_amount);
   PyTuple_SET_ITEM(__pyx_t_1, 4, __pyx_kp_u_of_amount);
-  __pyx_t_4 = PyFloat_FromDouble(__pyx_v_self->amount); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble(__pyx_v_self->amount); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_FormatSimple(__pyx_t_4, __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_FormatSimple(__pyx_t_4, __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_3 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) > __pyx_t_3) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) : __pyx_t_3;
@@ -2912,14 +2912,14 @@ static PyObject *__pyx_pf_12bitcoin_lite_11transaction_11Transaction_2details(st
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_1, 5, __pyx_t_5);
   __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyUnicode_Join(__pyx_t_1, 6, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyUnicode_Join(__pyx_t_1, 6, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_r = __pyx_t_5;
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "bitcoin_lite/transaction.pyx":11
+  /* "bitcoin_lite/transaction.pyx":22
  *         self.amount = amount
  * 
  *     def details(self):             # <<<<<<<<<<<<<<
@@ -3873,6 +3873,7 @@ static PyMethodDef __pyx_methods_12bitcoin_lite_11transaction_Transaction[] = {
 #if CYTHON_USE_TYPE_SPECS
 static PyType_Slot __pyx_type_12bitcoin_lite_11transaction_Transaction_slots[] = {
   {Py_tp_dealloc, (void *)__pyx_tp_dealloc_12bitcoin_lite_11transaction_Transaction},
+  {Py_tp_doc, (void *)PyDoc_STR("\n    A Cython-optimized transaction class for high-performance cryptocurrency operations.\n    \n    Attributes:\n        sender (str): The transaction initiator\n        receiver (str): The transaction recipient\n        amount (float): The transaction amount\n    \n    Methods:\n        details(): Returns a formatted transaction summary\n    ")},
   {Py_tp_methods, (void *)__pyx_methods_12bitcoin_lite_11transaction_Transaction},
   {Py_tp_init, (void *)__pyx_pw_12bitcoin_lite_11transaction_11Transaction_1__init__},
   {Py_tp_new, (void *)__pyx_tp_new_12bitcoin_lite_11transaction_Transaction},
@@ -3918,7 +3919,7 @@ static PyTypeObject __pyx_type_12bitcoin_lite_11transaction_Transaction = {
   0, /*tp_setattro*/
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE, /*tp_flags*/
-  0, /*tp_doc*/
+  PyDoc_STR("\n    A Cython-optimized transaction class for high-performance cryptocurrency operations.\n    \n    Attributes:\n        sender (str): The transaction initiator\n        receiver (str): The transaction recipient\n        amount (float): The transaction amount\n    \n    Methods:\n        details(): Returns a formatted transaction summary\n    "), /*tp_doc*/
   0, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
@@ -4062,16 +4063,16 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
 
-  /* "bitcoin_lite/transaction.pyx":11
+  /* "bitcoin_lite/transaction.pyx":22
  *         self.amount = amount
  * 
  *     def details(self):             # <<<<<<<<<<<<<<
  *         return f"Transaction from {self.sender} to {self.receiver} of amount {self.amount}"
  */
-  __pyx_tuple__3 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
-  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_bitcoin_lite_transaction_pyx, __pyx_n_s_details, 11, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_bitcoin_lite_transaction_pyx, __pyx_n_s_details, 22, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 22, __pyx_L1_error)
 
   /* "(tree fragment)":1
  * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
@@ -4498,15 +4499,15 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "bitcoin_lite/transaction.pyx":11
+  /* "bitcoin_lite/transaction.pyx":22
  *         self.amount = amount
  * 
  *     def details(self):             # <<<<<<<<<<<<<<
  *         return f"Transaction from {self.sender} to {self.receiver} of amount {self.amount}"
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12bitcoin_lite_11transaction_11Transaction_3details, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_Transaction_details, NULL, __pyx_n_s_bitcoin_lite_transaction, __pyx_d, ((PyObject *)__pyx_codeobj__4)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12bitcoin_lite_11transaction_11Transaction_3details, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_Transaction_details, NULL, __pyx_n_s_bitcoin_lite_transaction, __pyx_d, ((PyObject *)__pyx_codeobj__4)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_12bitcoin_lite_11transaction_Transaction, __pyx_n_s_details, __pyx_t_2) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_12bitcoin_lite_11transaction_Transaction, __pyx_n_s_details, __pyx_t_2) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   PyType_Modified(__pyx_ptype_12bitcoin_lite_11transaction_Transaction);
 
@@ -4545,8 +4546,8 @@ if (!__Pyx_RefNanny) {
 
   /* "bitcoin_lite/transaction.pyx":1
  * cdef class Transaction:             # <<<<<<<<<<<<<<
- *     cdef str sender
- *     cdef str receiver
+ *     """
+ *     A Cython-optimized transaction class for high-performance cryptocurrency operations.
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
