@@ -245,9 +245,9 @@ where:
 - Mp: Memory usage in pure Python
 - Mc: Memory usage in Cython
 
-### 4. Statistical Analysis
+### 4. Statistical analysis
 
-#### 4.1 Transaction Distribution
+#### 4.1 Transaction distribution
 For `n` transactions, the probability density function `f(x)` of transaction amounts:
 
 ```math
@@ -257,7 +257,7 @@ where:
 - μ: Mean transaction amount
 - σ: Standard deviation of amounts
 
-#### 4.2 Network Load Model
+#### 4.2 Network load model
 The network load `L(t)` at time `t`:
 
 ```math
@@ -269,9 +269,9 @@ where:
 - β: Decay factor
 - tᵢ: Transaction time
 
-### 5. Implementation Examples
+### 5. Implementation examples
 
-#### 5.1 Balance Calculation Implementation
+#### 5.1 Balance calculation implementation
 ```python
 def calculate_balance(address, transactions):
     received = sum(t.amount for t in transactions if t.receiver == address)
