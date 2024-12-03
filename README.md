@@ -185,7 +185,7 @@ where:
 #### 1.2 Balance calculation
 For any address `x`, the balance `B(x)` at time `t` is defined as:
 
-```
+```math
 B(x,t) = ∑[T∈L | T.r=x] T.a - ∑[T∈L | T.s=x] T.a
 ```
 
@@ -194,7 +194,7 @@ where `L` is the set of all confirmed transactions in the ledger before time t.
 #### 1.3 Transaction validity function
 A transaction validity function `V(T)` is defined as:
 
-```
+```math
 V(T) = {
     1, if B(T.s,T.t) ≥ T.a
     0, otherwise
@@ -213,7 +213,7 @@ The time complexity for key operations:
 #### 2.2 Space Complexity
 The space complexity `S(n)` for n transactions:
 
-```
+```math
 S(n) = St + n(Ss + Sr + Sa + Sh)
 ```
 where:
@@ -228,7 +228,7 @@ where:
 #### 3.1 Performance ratio
 The performance ratio `R` comparing Cython implementation to pure Python:
 
-```
+```math
 R = Tp/Tc
 ```
 where:
@@ -238,7 +238,7 @@ where:
 #### 3.2 Memory efficiency
 Memory efficiency `E` is calculated as:
 
-```
+```math
 E = (Mp - Mc)/Mp * 100%
 ```
 where:
@@ -250,7 +250,7 @@ where:
 #### 4.1 Transaction Distribution
 For `n` transactions, the probability density function `f(x)` of transaction amounts:
 
-```
+```math
 f(x) = (1/nσ√(2π)) * e^(-(x-μ)²/2σ²)
 ```
 where:
@@ -260,7 +260,7 @@ where:
 #### 4.2 Network Load Model
 The network load `L(t)` at time `t`:
 
-```
+```math
 L(t) = λ + ∑(i=1 to n) αᵢe^(-β(t-tᵢ))
 ```
 where:
@@ -291,7 +291,7 @@ def validate_transaction(transaction, ledger):
 #### 6.1 Load testing formula
 System capacity C can be calculated as:
 
-```
+```math
 C = min(Ct, Cm, Cn)
 ```
 where:
@@ -302,7 +302,7 @@ where:
 #### 6.2 Throughput analysis
 Maximum throughput T:
 
-```
+```math
 T = min(1/tp, 1/tv, 1/ts)
 ```
 where:
@@ -320,7 +320,7 @@ where:
 | Balance Check| O(n)           | O(1)            | 2.96x         |
 
 #### 7.2 Memory usage
-```
+```math
 M(n) = 128 + 64n bytes (Cython)
 M(n) = 256 + 96n bytes (Python)
 ```
