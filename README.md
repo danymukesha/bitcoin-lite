@@ -351,7 +351,8 @@ t = current_time()
 tx_id = tx.execute()
 ```
 
-streamed transaction:
+Streamed transaction:
+
 ```python
 if __name__ == "__main__":
     from database import TransactionDatabase
@@ -374,6 +375,21 @@ if __name__ == "__main__":
 
 ```
 
+Dashboard example for analystical aspects of the transaction system:
+
+```python
+if __name__ == "__main__":
+    from database import TransactionDatabase
+    
+    # init. database and data generator
+    db = TransactionDatabase()
+    generator = AnalyticsDataGenerator(db)
+    
+    # generate and print dashboard data
+    dashboard_data = generator.generate_dashboard_data()
+    print(dashboard_data)
+```
+![dashboad](tests/dashboard.png)
 
 ## 9. Potential improvements
 
@@ -403,3 +419,5 @@ optimizations, or examples, feel free to submit a pull request or open an issue 
 ## No license
 
 This package will be open-source and is not under any license (i.e. you can fork it, copy and modify it as you wish).
+
+
