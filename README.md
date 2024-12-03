@@ -388,6 +388,9 @@ if __name__ == "__main__":
     # generate and print dashboard data
     dashboard_data = generator.generate_dashboard_data()
     print(dashboard_data)
+
+    const dashboardData = JSON.parse(data);
+    <Analytics data={dashboardData} />
 ```
 ![dashboard](https://github.com/user-attachments/assets/7a48d485-0001-45cf-a5c7-bf38998caeec)
 
