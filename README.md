@@ -16,7 +16,7 @@ approachable manner.
 
 - **Performance optimization**:
   - By using Cython, the package provides enhanced computational efficiency compared to pure Python implementations.
-  - `Bitcoin-lite` serves as a streamlined framework for understanding and experimenting with blockchain transaction principles 
+  - `Bitcoin-lite` is intended to be a streamlined framework for understanding and experimenting with blockchain transaction principles 
   through an optimized computational architecture. By using the Cython's static typing and direct C-level operations, 
   `Bitcoin-Lite` achieves significant performance improvements over traditional Python implementations.
 
@@ -24,12 +24,6 @@ approachable manner.
   - `Bitcoin-Lite` is designed for simplicity, allowing users to easily create, process, and interact with transactions.
 
 ## Components
-
-Some minimum requirements:
-
-- Python ≥ 3.8
-- Cython ≥ 3.0.0
-- C compiler (gcc/clang/MSVC)
 
 ### 1. `Transaction` class
 
@@ -44,31 +38,19 @@ The core component of the package is the `Transaction` class. This class provide
   - `__init__(sender, receiver, amount)`: Initializes a transaction with the specified details.
   - `details()`: Returns a formatted string summarizing the transaction.
 
-### Example usage
-Here is a simple example of how to use the `Transaction` class:
-
-```python
-from bitcoin_lite import Transaction
-
-# create a transaction
-tx = Transaction("Alice", "Bob", 100.0)
-
-# print transaction details
-print(tx.details())
-```
-
-### Output
-```
-Transaction from Alice to Bob of amount 100.0
-```
-
 ## Installation
+
+Some minimum requirements:
+
+- Python ≥ 3.8
+- Cython ≥ 3.0.0
+- C compiler (gcc/clang/MSVC)
 
 To install the Bitcoin-Lite package, follow these steps:
 
 1. Clone the repository from GitHub:
    ```bash
-   git clone <your-repo-url>
+   git clone git@github.com:danymukesha/bitcoin-lite.git
    cd bitcoin-lite
    ```
 
@@ -91,6 +73,24 @@ poetry run python test_transaction.py
 ```
 
 This will create a sample transaction and display its details.
+
+### Example usage
+Here is a simple example of how to use the `Transaction` class:
+
+```python
+from bitcoin_lite import Transaction
+
+# create a transaction
+tx = Transaction("Alice", "Bob", 100.0)
+
+# print transaction details
+print(tx.details())
+```
+
+### Output
+```
+Transaction from Alice to Bob of amount 100.0
+```
 
 ## Technical architecture
 
@@ -169,7 +169,8 @@ Preliminary benchmarks show significant performance improvements compared to pur
 
 ## Contribution
 
-Contributions to the Bitcoin-Lite package are welcome! If you have ideas for additional features, optimizations, or examples, feel free to submit a pull request or open an issue in the GitHub repository.
+Contributions to the Bitcoin-Lite package are welcome! If you have ideas for additional features, 
+optimizations, or examples, feel free to submit a pull request or open an issue in the GitHub repository.
 
 ## No license
 
