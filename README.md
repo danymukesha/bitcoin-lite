@@ -1,4 +1,5 @@
 # Bitcoin-Lite 
+[![PyPI version](https://img.shields.io/pypi/v/mkdocs-badges)](https://pypi.org/project/bitcoin-lite/)
 
 ## Introduction
 
