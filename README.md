@@ -1,5 +1,4 @@
-# Bitcoin-Lite 
-[![PyPI version](https://img.shields.io/pypi/v/mkdocs-badges)](https://pypi.org/project/bitcoin-lite/)
+# Bitcoin-Lite [![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fpypi.org%2Fproject%2Fbitcoin-lite%2F?logo=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBitcoin%23%2Fmedia%2FFile%3ABitcoin.svg&label=pypi&labelColor=blue&color=yellow)](https://pypi.org/project/bitcoin-lite/)
 
 ## Introduction
 
