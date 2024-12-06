@@ -1,8 +1,9 @@
 ---
-title: " Optimized blockchain transaction processing with [**Bitcoin-Lite**](https://pypi.org/project/bitcoin-lite/): a perrformance-oriented
+title: " Optimized blockchain transaction processing with [**Bitcoin-Lite**](https://pypi.org/project/bitcoin-lite/): Performance-oriented
   Python implementation"
+keywords: bitcoin, blockchain, crypto-currency, banking-system
 author:
-  - Dany Mukesha^[University of Côte d'Azur,"https://orcid.org/0009-0001-9514-751X", danymukesha@gmail.com]
+  - Dany Mukesha^[University of Côte d'Azur, Nice France,"https://orcid.org/0009-0001-9514-751X", danymukesha@gmail.com]
 date: "`r Sys.Date()`"
 output:
   pdf_document:
