@@ -1,5 +1,6 @@
+![PyPI - Version](https://img.shields.io/pypi/v/bitcoin-lite?style=plastic&logoColor=yellow&color=yellow)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13911246.svg)](https://doi.org/10.5281/zenodo.14275084)
 # Bitcoin-Lite 
-![PyPI - Version](https://img.shields.io/pypi/v/bitcoin-lite?style=plastic&logoColor=yellow&color=blue)
 
 ## Introduction
 
